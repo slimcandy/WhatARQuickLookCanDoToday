@@ -8,7 +8,8 @@
     "build": "npx parcel build src/index.html",
     "format": "prettier --write src/**/*.ts",
     "lint": "eslint --fix src/**/*.ts",
-    "test": "npm run format && npm run lint"
+    "test": "npm run format && npm run lint",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +24,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-import": "^2.26.0",
     "parcel": "^2.7.0",
-    "prettier": "2.7.1"
+    "prettier": "2.7.1",
+    "husky": "^8.0.0"
   }
 }
