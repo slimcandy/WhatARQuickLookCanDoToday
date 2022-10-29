@@ -1,0 +1,17 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "private": "true",
+  "scripts": {
+    "dev": "npx parcel src/index.html",
+    "build": "npx parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.7.0",
+    "parcel": "^2.7.0"
+  }
+}
