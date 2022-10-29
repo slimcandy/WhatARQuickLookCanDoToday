@@ -5,13 +5,24 @@
   "private": "true",
   "scripts": {
     "dev": "npx parcel src/index.html",
-    "build": "npx parcel build src/index.html"
+    "build": "npx parcel build src/index.html",
+    "format": "prettier --write src/**/*.ts",
+    "lint": "eslint --fix src/**/*.ts",
+    "test": "npm run format && npm run lint"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
-    "parcel": "^2.7.0"
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "parcel": "^2.7.0",
+    "prettier": "2.7.1"
   }
 }
