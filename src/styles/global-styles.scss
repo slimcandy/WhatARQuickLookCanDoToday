@@ -1,0 +1,135 @@
+body,
+div,
+p,
+th,
+td,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+q,
+figcaption,
+cite,
+i,
+em,
+b,
+strong,
+button,
+p:first-line,
+p:first-letter {
+  font-weight: var(--text-wght);
+  font-style: normal;
+  font-variation-settings: 'wght' var(--text-wght), 'ital' var(--text-ital);
+}
+
+/* Generic header styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--sans-serif);
+  font-weight: normal;
+  transition: all linear 0.2s;
+  --text-wght: calc(var(--p-vf-wght) * var(--h1-vf-wght-multiplier-s));
+}
+
+h1 {
+  /* Set --text-wght value multiplier */
+  --text-wght: calc(var(--p-vf-wght) * var(--h1-vf-wght-multiplier-s));
+  --text-ital: 0;
+
+  font-family: var(--sans-serif);
+  font-size: calc(var(--h1-font-size-min) * 1em);
+  line-height: var(--h1-line-height-min);
+  margin: 1rem auto;
+  max-width: 50rem;
+  @media screen and (min-width: 24.15em) {
+    line-height: calc(
+      (var(--h1-line-height-min) * 1em) +
+        (var(--h1-line-height-max) - var(--h1-line-height-min)) *
+        (
+          (100vw - (var(--bp-small) * 1em)) /
+            (var(--bp-xlarge) - var(--bp-small))
+        )
+    );
+    font-size: calc(
+      (var(--h1-font-size-min) * 1em) +
+        (var(--h1-font-size-max) - var(--h1-font-size-min)) *
+        (
+          (100vw - (var(--bp-small) * 1em)) /
+            (var(--bp-xlarge) - var(--bp-small))
+        )
+    );
+  }
+  @media screen and (min-width: 43.75em) {
+    --text-wght: calc(var(--p-vf-wght) * var(--h1-vf-wght-multiplier-m));
+    max-width: 60rem;
+  }
+  @media screen and (min-width: 60.25em) {
+    --text-wght: calc(var(--p-vf-wght) * var(--h1-vf-wght-multiplier-l));
+    line-height: var(--h1-line-height-max);
+    max-width: 70rem;
+  }
+  @media (min-width: 75em) {
+    font-size: calc(var(--h1-font-size-max) * 1em);
+    line-height: var(--h1-line-height-max);
+    max-width: 75rem;
+  }
+}
+
+h2 {
+  /* Set --text-wght value multiplier */
+  --text-wght: calc(var(--p-vf-wght) * var(--h2-vf-wght-multiplier-s));
+  --text-ital: 0;
+
+  font-family: var(--sans-serif);
+  font-size: calc(var(--h2-font-size-min) * 1em);
+  line-height: var(--h2-line-height-min);
+  margin: 1rem auto 0.5rem auto;
+  max-width: 38rem;
+  @media screen and (min-width: 24.15em) {
+    line-height: calc(
+      (var(--h2-line-height-min) * 1em) +
+        (var(--h2-line-height-max) - var(--h2-line-height-min)) *
+        (
+          (100vw - (var(--bp-small) * 1em)) /
+            (var(--bp-xlarge) - var(--bp-small))
+        )
+    );
+    font-size: calc(
+      (var(--h2-font-size-min) * 1em) +
+        (var(--h2-font-size-max) - var(--h2-font-size-min)) *
+        (
+          (100vw - (var(--bp-small) * 1em)) /
+            (var(--bp-xlarge) - var(--bp-small))
+        )
+    );
+  }
+  @media screen and (min-width: 43.75em) {
+    --text-wght: calc(var(--p-vf-wght) * var(--h2-vf-wght-multiplier-m));
+
+    max-width: 38.5rem;
+  }
+  @media screen and (min-width: 60.25em) {
+    max-width: 38.5rem;
+  }
+  @media (min-width: 75em) {
+    --text-wght: calc(var(--p-vf-wght) * var(--h2-vf-wght-multiplier-l));
+
+    font-size: calc(var(--h2-font-size-max) * 1em);
+    line-height: var(--h2-line-height-max);
+    max-width: 42rem;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}

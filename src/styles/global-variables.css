@@ -1,0 +1,66 @@
+:root {
+  /* Font family */
+  --sans-serif: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Cantarell, Ubuntu, roboto, noto, arial,
+    sans-serif;
+  --serif: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman,
+    Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji,
+    Segoe UI Emoji, Segoe UI Symbol;
+
+  /* Width Variables */
+  --max-content-width: 38em;
+
+  /* Breakpoint variables */
+  --bp-small: 24.15;
+  --bp-medium: 43.75;
+  --bp-large: 60.25;
+  --bp-xlarge: 75;
+
+  /* initial values ital */
+  --text-wght: 350;
+  --text-ital: 0;
+
+  /* text GRAD */
+  --text-GRAD: 88;
+
+  /* Paragraph variables */
+  --p-line-height-min: 1.15;
+  --p-line-height-max: 1.5;
+  --p-font-size-min: 1;
+  --p-font-size-max: 1.25;
+  --p-vf-wght: 350;
+  --p-vf-wdth: 100;
+  --p-vf-wght: var(--text-wght);
+
+  /* H1 variables */
+  --h1-line-height-min: 0.95;
+  --h1-line-height-max: 1.05;
+  --h1-font-size-min: 2;
+  --h1-font-size-max: 5;
+  --h1-vf-wght-multiplier-s: 2;
+  --h1-vf-wght-multiplier-m: 2.25;
+  --h1-vf-wght-multiplier-l: 2.5;
+  --h1-vf-wdth: 100;
+
+  /* H2 variables */
+  --h2-line-height-min: 1.15;
+  --h2-line-height-max: 1.25;
+  --h2-font-size-min: 1.5;
+  --h2-font-size-max: 3.5;
+  --h2-vf-wght-multiplier-s: 1.25;
+  --h2-vf-wght-multiplier-m: 1.5;
+  --h2-vf-wght-multiplier-l: 1.75;
+  --h2-vf-wdth: 100;
+
+  /* Dropcap variables */
+  --dc-line-height-min: 0.9;
+  --dc-line-height-max: 0.95;
+  --dc-font-size-min: 2.7;
+  --dc-font-size-max: 5;
+
+  /* Blockquote variables */
+  --bq-line-height-min: 1.1;
+  --bq-line-height-max: 0.95;
+  --bq-font-size-min: 2.7;
+  --bq-font-size-max: 5;
+}
