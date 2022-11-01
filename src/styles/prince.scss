@@ -6,6 +6,7 @@
   hanging-punctuation: first force-end last;
   background-color: #fbfbf6;
   color: #3c3d31;
+  quotes: '\00AB''\00BB''\201E''\201C';
 
   q:before,
   blockquote:before {
