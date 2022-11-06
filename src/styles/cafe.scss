@@ -1,0 +1,102 @@
+.cafe {
+  font-family: var(--sans-serif);
+  --dark-red: #8c272c;
+  --max-content-width: 45em;
+  --max-left-border-width: 5em;
+  --left-border-height: 4em;
+
+  background: linear-gradient(
+      135deg,
+      var(--dark-red) 22px,
+      var(--dark-red) 24px,
+      transparent 24px,
+      transparent 67px,
+      var(--dark-red) 67px,
+      var(--dark-red) 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+      225deg,
+      var(--dark-red) 22px,
+      var(--dark-red) 24px,
+      transparent 24px,
+      transparent 67px,
+      var(--dark-red) 67px,
+      var(--dark-red) 69px,
+      transparent 69px
+    ),
+    linear-gradient(
+        90deg,
+        transparent 4.5em,
+        var(--dark-red) 4.5em,
+        var(--dark-red) var(--max-left-border-width),
+        transparent var(--max-left-border-width)
+      )
+      0 var(--max-left-border-width);
+  background-color: #fff7ea;
+  background-size: var(--max-left-border-width) var(--left-border-height);
+  background-repeat: repeat-y;
+
+  .dashed-line {
+    content: '';
+    height: 0.5em;
+    width: 100%;
+    display: block;
+
+    border-bottom: medium dashed var(--dark-red);
+  }
+
+  &__content {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    max-width: var(--max-content-width);
+    transition: all linear 0.2s;
+
+    hyphens: auto;
+    text-align: justify;
+
+    &::after {
+      @extend .dashed-line;
+    }
+  }
+
+  &__heading {
+    color: var(--dark-red);
+    font-size: 3em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.1em;
+
+    &::after {
+      @extend .dashed-line;
+    }
+  }
+
+  &__list {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    row-gap: 1.5em;
+
+    font-size: 1.4em;
+  }
+
+  .menu-item-info {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 1.5em;
+  }
+
+  &__image {
+    max-width: var(--max-content-width);
+    width: auto;
+    margin: 2em auto;
+    display: block;
+    max-height: 15em;
+  }
+}
