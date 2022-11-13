@@ -1,9 +1,24 @@
 .cafe {
   font-family: var(--sans-serif);
-  --dark-red: #8c272c;
-  --max-content-width: 45em;
-  --max-left-border-width: 5em;
+  --dark-red: rgb(140, 38, 43);
+  --dark-red: lab(32.65% 43.9 23.14);
   --left-border-height: 4em;
+
+  --max-content-width: 15em;
+  --max-left-border-width: 2em;
+  @media screen and (min-width: 24.15em) {
+    --max-content-width: 25em;
+  }
+  @media screen and (min-width: 43.75em) {
+    --max-content-width: 35em;
+  }
+  @media screen and (min-width: 60.25em) {
+    --max-content-width: 45em;
+  }
+  @media (min-width: 75em) {
+    --max-content-width: 55em;
+    --max-left-border-width: 5em;
+  }
 
   background: linear-gradient(
       135deg,
@@ -37,6 +52,8 @@
   background-size: var(--max-left-border-width) var(--left-border-height);
   background-repeat: repeat-y;
 
+  padding-left: var(--max-left-border-width);
+
   .dashed-line {
     content: '';
     height: 0.5em;
@@ -64,10 +81,8 @@
 
   &__heading {
     color: var(--dark-red);
-    font-size: 3em;
     text-transform: uppercase;
     text-align: center;
-    letter-spacing: 0.1em;
 
     &::after {
       @extend .dashed-line;
@@ -77,10 +92,15 @@
   &__list {
     margin: 0;
     display: grid;
-    grid-template-columns: 3fr 1fr;
     row-gap: 1.5em;
+    font-size: 1em;
 
-    font-size: 1.4em;
+    grid-template-columns: 1fr;
+    @media screen and (min-width: 43.75em) {
+      grid-template-columns: 3fr 1fr;
+      font-size: 1.4em;
+      --max-content-width: 50em;
+    }
   }
 
   .menu-item-info {
@@ -93,10 +113,14 @@
   }
 
   &__image {
-    max-width: var(--max-content-width);
     width: auto;
-    margin: 2em auto;
     display: block;
-    max-height: 15em;
+
+    margin: 1em auto;
+    @media screen and (min-width: 43.75em) {
+      max-width: var(--max-content-width);
+      max-height: 15em;
+      margin: 2em auto;
+    }
   }
 }
