@@ -1,33 +1,15 @@
-.prince {
+.dino {
   margin: 0 auto;
   padding: 1em 0.5em;
+  columns: 1;
 
   font-family: var(--serif);
   hanging-punctuation: first force-end last;
   background-color: #fbfbf6;
   color: #3c3d31;
-  quotes: '\00AB''\00BB''\201E''\201C';
 
-  q:before,
-  blockquote:before {
-    /* Native quotes */
-    content: open-quote;
-  }
-  q:after,
-  blockquote:after {
-    /* Native quotes */
-    content: close-quote;
-  }
-
-  p,
-  blockquote {
-    --text-ital: 0;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: var(--max-content-width);
-    transition: all linear 0.2s;
-    hyphens: auto;
-    text-align: justify;
+  @media screen and (min-width: 43.75em) {
+    columns: 2;
   }
 
   /* Variations and variables */
@@ -118,5 +100,11 @@
     margin-top: 1rem;
     margin-bottom: 2rem;
     text-align: center;
+  }
+
+  figure {
+    border: thin solid black;
+    padding: 1em 1.5em;
+    break-inside: avoid;
   }
 }
