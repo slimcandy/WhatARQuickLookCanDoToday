@@ -43,6 +43,10 @@
     @media (min-width: 60.25em) {
       grid-template-columns: 1fr 1fr 1fr;
     }
+
+    li {
+      position: relative;
+    }
   }
 
   &__image {

@@ -115,3 +115,26 @@ img {
   height: auto;
   max-width: 100%;
 }
+
+.ar-link {
+  height: 2em;
+  width: 2em;
+  text-indent: -9999px;
+  white-space: nowrap;
+  background-image: url('../images/arkit-glyph.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  background-color: #ffffffba;
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    box-shadow: 0.1em 0.1em 1em rgba(0, 0, 0, 0.5), 0.25em 0.25em black;
+    cursor: pointer;
+  }
+}

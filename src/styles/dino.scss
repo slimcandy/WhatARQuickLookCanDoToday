@@ -7,6 +7,8 @@
   hanging-punctuation: first force-end last;
   background-color: #fbfbf6;
   color: #3c3d31;
+  text-align: justify;
+  hyphens: auto;
 
   @media screen and (min-width: 43.75em) {
     columns: 2;
@@ -106,5 +108,6 @@
     border: thin solid black;
     padding: 1em 1.5em;
     break-inside: avoid;
+    position: relative;
   }
 }
