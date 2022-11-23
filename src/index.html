@@ -11,6 +11,44 @@
 
   <body>
     <h1>What AR Quick Look can do today?</h1>
+    <article class="text" lang="en">
+      <p>
+        Apple is rumoured to reveal augmented reality glasses next year.
+        Already, iOS devices, one of the few, support AR (augmented reality)
+        technology on websites.
+      </p>
+      <p>
+        Syntax for augmented reality objects requires a link with a rel
+        attribute with the value of ar and a picture inside.
+      </p>
+      <code>
+        &lt;a rel=&quot;ar&quot;
+        href=&quot;/assets/models/my-model.usdz&quot;&gt; &lt;img
+        src=&quot;/assets/models/my-model-thumbnail.jpg&quot; /&gt; &lt;/a&gt;
+      </code>
+      <p>
+        An additional field for the bottom of the view screen allows you
+        to specify the characteristics of the virtual object.
+      </p>
+      <code
+        >https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.usdz#custom=https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.html&customHeight=large</code
+      >
+      <h3>Links</h3>
+      <ol>
+        <li>
+          <a
+            href="https://webkit.org/blog/8421/viewing-augmented-reality-assets-in-safari-for-ios/"
+            >Viewing Augmented Reality Assets in Safari for iOS</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://developer.apple.com/documentation/arkit/adding_an_apple_pay_button_or_a_custom_action_in_ar_quick_look"
+            >Adding an Apple Pay Button or a Custom Action in AR Quick Look</a
+          >
+        </li>
+      </ol>
+    </article>
     <h2>Furnish your room</h2>
     <article class="ikea" lang="ru">
       <ul>
@@ -70,7 +108,10 @@
             alt="Mask"
             class="halloween__image"
           />
-          <a href="./ar-objects/Mask_pumpkin.usdz" class="ar-link" rel="ar"
+          <a
+            href="./ar-objects/Mask_pumpkin.usdz#custom=http://localhost:1234/ar-banner.html&customHeight=large"
+            class="ar-link"
+            rel="ar"
             ><img src="./images/Halloween_Mask.jpg" alt="Halloween mask in AR"
           /></a>
           <h3 class="halloween__heading">
@@ -85,7 +126,7 @@
       </ul>
     </article>
     <h2>Historic articles</h2>
-    <article class="dino" lang="en">
+    <article class="dino text" lang="en">
       <h3>🦖 Stegosaurus</h3>
       <p>
         While Brachiosaurus would’ve impressed you with its immense size,
@@ -163,7 +204,14 @@
     <h2>AR 3D room plan</h2>
     <article class="cian">
       <ul class="cian__photos">
-        <li><img src="./images/cian-pic.jpeg" alt="" /></li>
+        <li>
+          <img src="./images/room-plan-with-measures.png" alt="" />
+          <a href="./ar-objects/room-plan.usdz" class="ar-link" rel="ar"
+            ><img
+              src="./images/room-plan-with-measures.png"
+              alt="Room plan in AR"
+          /></a>
+        </li>
         <li><img src="./images/cian-pic.jpeg" alt="" /></li>
         <li><img src="./images/cian-pic.jpeg" alt="" /></li>
         <li><img src="./images/cian-pic.jpeg" alt="" /></li>
