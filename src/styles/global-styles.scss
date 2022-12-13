@@ -249,14 +249,18 @@ img {
       margin: 0;
     }
   }
-  .images {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    display: grid;
-    align-items: end;
+  .images,
+  figure:not(.images figure),
+  & > figure {
     border: thick double black;
     padding: 0.5em;
     margin: 0.5em 0;
+    width: fit-content;
+  }
+  .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
     gap: 1em;
   }
 }
