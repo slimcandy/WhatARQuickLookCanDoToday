@@ -1,5 +1,5 @@
 const roomLinkElement = document.getElementById(
-  'room-plan-ar-link'
+  'room-plan-ar-link',
 ) as HTMLAnchorElement;
 
 const roomHandleMessage = (event: MessageEvent) => {
@@ -14,12 +14,12 @@ if (roomLinkElement) {
   roomLinkElement.addEventListener(
     'message',
     roomHandleMessage as EventListener,
-    false
+    false,
   );
 }
 
 const schoolLinkElement = document.getElementById(
-  'school-ar-link'
+  'school-ar-link',
 ) as HTMLLinkElement;
 
 const schoolHandleMessage = (event: MessageEvent) => {
@@ -33,13 +33,13 @@ if (schoolLinkElement) {
   schoolLinkElement.addEventListener(
     'message',
     schoolHandleMessage as EventListener,
-    false
+    false,
   );
 }
 
 // Dino wiki page.
 const dinoLinkElement = document.getElementById(
-  'dino-ar-link'
+  'dino-ar-link',
 ) as HTMLAnchorElement;
 
 const dinoHandleMessage = (event: MessageEvent) => {
@@ -54,6 +54,6 @@ if (dinoLinkElement) {
   dinoLinkElement.addEventListener(
     'message',
     dinoHandleMessage as EventListener,
-    false
+    false,
   );
 }
