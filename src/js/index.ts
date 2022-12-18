@@ -1,5 +1,6 @@
-// Room request room tour.
-const roomLinkElement = document.getElementById('room-plan-ar-link');
+const roomLinkElement = document.getElementById(
+  'room-plan-ar-link'
+) as HTMLAnchorElement;
 
 const roomHandleMessage = (event: MessageEvent) => {
   if (event.data === '_apple_ar_quicklook_button_tapped') {
@@ -10,11 +11,16 @@ const roomHandleMessage = (event: MessageEvent) => {
 };
 
 if (roomLinkElement) {
-  roomLinkElement.addEventListener('message', roomHandleMessage, false);
+  roomLinkElement.addEventListener(
+    'message',
+    roomHandleMessage as EventListener,
+    false
+  );
 }
 
-// School uniform call.
-const schoolLinkElement = document.getElementById('school-ar-link');
+const schoolLinkElement = document.getElementById(
+  'school-ar-link'
+) as HTMLLinkElement;
 
 const schoolHandleMessage = (event: MessageEvent) => {
   if (event.data === '_apple_ar_quicklook_button_tapped') {
@@ -24,19 +30,30 @@ const schoolHandleMessage = (event: MessageEvent) => {
 };
 
 if (schoolLinkElement) {
-  schoolLinkElement.addEventListener('message', schoolHandleMessage, false);
+  schoolLinkElement.addEventListener(
+    'message',
+    schoolHandleMessage as EventListener,
+    false
+  );
 }
 
 // Dino wiki page.
-const dinoLinkElement = document.getElementById('dino-ar-link');
+const dinoLinkElement = document.getElementById(
+  'dino-ar-link'
+) as HTMLAnchorElement;
 
 const dinoHandleMessage = (event: MessageEvent) => {
   if (event.data === '_apple_ar_quicklook_button_tapped') {
     // Handle the user tap.
     window.location.href = 'https://en.wikipedia.org/wiki/Stegosaurus';
   }
+  return undefined;
 };
 
 if (dinoLinkElement) {
-  dinoLinkElement.addEventListener('message', dinoHandleMessage, false);
+  dinoLinkElement.addEventListener(
+    'message',
+    dinoHandleMessage as EventListener,
+    false
+  );
 }
