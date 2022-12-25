@@ -5,11 +5,13 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['"Montserrat"', ...defaultTheme.fontFamily.sans]
+        sans: ['"Montserrat"', ...defaultTheme.fontFamily.sans],
+        roboto: ['"Roboto"', ...defaultTheme.fontFamily.sans]
       },
       colors: {
         'custom-grey': '#D9D9D93D',
-        'custom-link': '#0066CC'
+        'custom-link': '#0066CC',
+        'custom-dark-grey': '#6e6e73'
       }
     }
   },
