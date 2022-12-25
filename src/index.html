@@ -1,605 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>What AR Quick Look can do today?</title>
-    <script src="./js/index.ts" type="module"></script>
-    <link rel="stylesheet" href="./styles/index.scss" />
-  </head>
 
-  <body>
-    <header class="bg-black flex justify-center items-center gap-2.5 md:gap-3">
-      <h2 class="text-xl md:text-2xl text-white py-5 md:py-4 font-medium">
-        Augmented Reality
-      </h2>
-      <picture>
-        <source
-          srcset="
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>What AR Quick Look can do today?</title>
+  <script src="./js/index.ts" type="module"></script>
+  <link rel="stylesheet" href="./styles/index.scss" />
+</head>
+
+<body>
+  <header class="bg-black flex justify-center items-center gap-2.5 md:gap-3">
+    <h2 class="text-xl md:text-2xl text-white py-5 md:py-4 font-medium">
+      Augmented Reality
+    </h2>
+    <picture>
+      <source srcset="
             ./images/ARKit-glyph.png?as=avif&width=400,
             ./images/ARKit-glyph.png?as=avif&width=800 2x
-          "
-          type="image/avif"
-        />
-        <source
-          srcset="
+          " type="image/avif" />
+      <source srcset="
             ./images/ARKit-glyph.png?as=webp&width=400,
             ./images/ARKit-glyph.png?as=webp&width=800 2x
-          "
-          type="image/webp"
-        />
-        <source
-          srcset="
+          " type="image/webp" />
+      <source srcset="
             ./images/ARKit-glyph.png?as=jpeg&width=400,
             ./images/ARKit-glyph.png?as=jpeg&width=800 2x
-          "
-          type="image/jpeg"
-        />
-        <img
-          src="./images/ARKit-glyph.png?width=48"
-          srcset="
+          " type="image/jpeg" />
+      <img src="./images/ARKit-glyph.png?width=48" srcset="
             ./images/ARKit-glyph.png?width=48,
             ./images/ARKit-glyph.png?width=96 2x
-          "
-          alt="AR logo"
-          class="w-12"
-        />
-      </picture>
-    </header>
-    <main class="flex flex-col">
-      <section class="bg-custom-grey px-3 py-9 md:py-20">
-        <article class="max-w-xl mx-auto hyphens-auto" lang="en">
-          <h1
-            class="font-medium text-2xl leading-6 pb-px md:pb-2 md:text-4xl md:leading-10"
-          >
-            What AR Quick Look can do today?
-          </h1>
-          <p
-            class="leading-4 text-sm my-2.5 first-line:font-semibold first-letter:float-left first-letter:pr-1 first-letter:text-7xl first-letter:leading-tight first-letter:-mb-3 first-letter:-mt-3 md:leading-6 md:text-xl md:my-8 md:first-line:font-bold md:first-letter:pr-1.5 md:first-letter:text-8xl md:first-letter:leading-snug md:first-letter:-mb-5 md:first-letter:-mt-7"
-          >
-            Apple is rumoured to reveal augmented reality glasses next year.
-            Already, iOS devices, one of the few, support AR (augmented reality)
-            technology on websites.
-          </p>
-          <p class="leading-4 text-sm my-2.5 md:leading-6 md:text-xl md:my-8">
-            Syntax for augmented reality objects requires a link with a rel
-            attribute with the value of ar and a picture inside.
-          </p>
-          <code
-            class="leading-4 text-sm my-2.5 select-all break-words md:leading-6 md:text-xl md:my-8"
-          >
+          " alt="AR logo" class="w-12" />
+    </picture>
+  </header>
+  <main class="flex flex-col">
+    <section class="bg-custom-grey px-3 py-9 md:py-20">
+      <article class="max-w-xl mx-auto hyphens-auto" lang="en">
+        <h1 class="font-medium text-2xl leading-6 pb-px md:pb-2 md:text-4xl md:leading-10">
+          What AR Quick Look can do today?
+        </h1>
+        <p
+          class="leading-4 text-sm my-2.5 first-line:font-semibold first-letter:float-left first-letter:pr-1 first-letter:text-7xl first-letter:leading-tight first-letter:-mb-3 first-letter:-mt-1 md:-mt-3 md:leading-6 md:text-xl md:my-8 md:first-line:font-bold md:first-letter:pr-1.5 md:first-letter:text-8xl md:first-letter:leading-snug md:first-letter:-mb-5 md:first-letter:-mt-7">
+          Apple is rumoured to reveal augmented reality glasses next year.
+          Already, iOS devices, one of the few, support AR (augmented reality)
+          technology on websites.
+        </p>
+        <p class="leading-4 text-sm my-2.5 md:leading-6 md:text-xl md:my-8">
+          Syntax for augmented reality objects requires a link with a rel
+          attribute with the value of ar and a picture inside.
+        </p>
+        <code class="leading-4 text-sm my-2.5 select-all break-words md:leading-6 md:text-xl md:my-8">
             &lt;a rel=&quot;ar&quot;
             href=&quot;/assets/models/my-model.usdz&quot;&gt; &lt;img
             src=&quot;/assets/models/my-model-thumbnail.jpg&quot; /&gt;
             &lt;/a&gt;
           </code>
-          <p class="leading-4 text-sm my-2.5 md:leading-6 md:text-xl md:my-8">
-            An additional field for the bottom of the view screen allows you
-            to specify the characteristics of the virtual object.
-          </p>
-          <code
-            class="leading-4 text-sm my-2.5 select-all break-words md:leading-6 md:text-xl md:my-8"
-            >https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.usdz#custom=https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.html&customHeight=large</code
-          >
-          <hr class="mt-4 mb-2 md:mt-8 md:mb-4" />
-          <ol class="list-disc leading-6 text-sm md:leading-8 md:text-xl">
-            <li>
-              <a
-                href="https://webkit.org/blog/8421/viewing-augmented-reality-assets-in-safari-for-ios/"
-                class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5"
-                >Viewing Augmented Reality Assets in Safari for iOS</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://developer.apple.com/documentation/arkit/adding_an_apple_pay_button_or_a_custom_action_in_ar_quick_look"
-                class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5"
-                >Adding an Apple Pay Button or a Custom Action in AR Quick
-                Look</a
-              >
-            </li>
-          </ol>
-        </article>
-      </section>
-      <hr />
-      <section class="px-3 py-9 md:py-20">
-        <article class="max-w-xl mx-auto hyphens-auto" lang="en">
-          <h2
-            class="font-roboto font-medium text-2xl leading-7 md:leading-9 md:text-3xl"
-          >
-            Halloween Masks
-          </h2>
-          <ul
-            class="list-decimal list-inside flex flex-col marker:float-left marker:pr-1 marker:text-xl marker:leading-tight md:marker:pr-1.5 md:marker:text-2xl md:marker:leading-snug md:list-outside"
-          >
-            <li>
-              <div class="flex items-center justify-between">
-                <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
-                  Get .usdz, .obj, .gltf or .usd file.
-                </p>
-                <figure class="py-0.5 px-1 my-1 rounded">
-                  <picture>
-                    <source
-                      srcset="
+        <p class="leading-4 text-sm my-2.5 md:leading-6 md:text-xl md:my-8">
+          An additional field for the bottom of the view screen allows you
+          to specify the characteristics of the virtual object.
+        </p>
+        <code
+          class="leading-4 text-sm my-2.5 select-all break-words md:leading-6 md:text-xl md:my-8">https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.usdz#custom=https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.html&customHeight=large</code>
+        <hr class="mt-4 mb-2 md:mt-8 md:mb-4" />
+        <ol class="list-disc list-inside leading-6 text-sm md:leading-8 md:text-xl md:list-outside">
+          <li>
+            <a href="https://webkit.org/blog/8421/viewing-augmented-reality-assets-in-safari-for-ios/"
+              class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5">Viewing
+              Augmented Reality Assets in Safari for iOS</a>
+          </li>
+          <li>
+            <a href="https://developer.apple.com/documentation/arkit/adding_an_apple_pay_button_or_a_custom_action_in_ar_quick_look"
+              class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5">Adding
+              an Apple Pay Button or a Custom Action in AR Quick
+              Look</a>
+          </li>
+        </ol>
+      </article>
+    </section>
+    <hr />
+    <section class="px-3 py-9 md:py-20">
+      <article class="max-w-xl mx-auto hyphens-auto" lang="en">
+        <h2 class="font-roboto font-medium text-2xl leading-7 md:leading-9 md:text-3xl">
+          Halloween Masks
+        </h2>
+        <ul
+          class="list-decimal list-inside flex flex-col marker:float-left marker:pr-1 marker:text-xl marker:leading-tight md:marker:pr-1.5 md:marker:text-2xl md:marker:leading-snug md:list-outside">
+          <li>
+            <div class="flex items-center justify-between">
+              <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
+                Get .usdz, .obj, .gltf or .usd file.
+              </p>
+              <figure class="py-0.5 px-1 my-1 rounded">
+                <picture>
+                  <source srcset="
                         ./images/halloween-mask/raw-3d-file.png?as=avif&width=200,
                         ./images/halloween-mask/raw-3d-file.png?as=avif&width=400 2x
-                      "
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="
+                      " type="image/avif" />
+                  <source srcset="
                         ./images/halloween-mask/raw-3d-file.png?as=webp&width=200,
                         ./images/halloween-mask/raw-3d-file.png?as=webp&width=400 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
+                      " type="image/webp" />
+                  <source srcset="
                         ./images/halloween-mask/raw-3d-file.png?as=jpeg&width=200,
                         ./images/halloween-mask/raw-3d-file.png?as=jpeg&width=400 2x
-                      "
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/halloween-mask/raw-3d-file.png?width=200"
-                      srcset="
+                      " type="image/jpeg" />
+                  <img src="./images/halloween-mask/raw-3d-file.png?width=200" srcset="
                         ./images/halloween-mask/raw-3d-file.png?width=200,
                         ./images/halloween-mask/raw-3d-file.png?width=400 2x
-                      "
-                      alt="Mask file"
-                      class="mx-auto"
-                    />
-                  </picture>
-                  <figcaption
-                    class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center -mt-3"
-                  >
-                    Mask file
-                  </figcaption>
-                </figure>
-              </div>
-            </li>
-            <li>
-              <div class="flex flex-col">
-                <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
-                  Download
-                  <a
-                    href="https://developer.apple.com/augmented-reality/tools/files/Reality_Converter_beta_6.dmg"
-                    class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5"
-                    >Apple Reality Converter</a
-                  >
-                  from
-                  <a
-                    href="https://developer.apple.com/augmented-reality/tools/#main"
-                    class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5"
-                    >Apple website</a
-                  >. Drop mask file and convert to .usdz - File -> Export.
-                </p>
-                <div class="grid grid-cols-2 items-center justify-center">
-                  <figure class="py-0.5 px-1 my-1 rounded">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/halloween-mask/download-reality-composer.png?as=avif&width=400,
-                          ./images/halloween-mask/download-reality-composer.png?as=avif&width=800 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/halloween-mask/download-reality-composer.png?as=webp&width=400,
-                          ./images/halloween-mask/download-reality-composer.png?as=webp&width=800 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/halloween-mask/download-reality-composer.png?as=jpeg&width=400,
-                          ./images/halloween-mask/download-reality-composer.png?as=jpeg&width=800 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/halloween-mask/download-reality-composer.png?width=400"
-                        srcset="
-                          ./images/halloween-mask/download-reality-composer.png?width=400,
-                          ./images/halloween-mask/download-reality-composer.png?width=800 2x
-                        "
-                        alt="Download Reality Composer"
-                        class="mx-auto"
-                      />
-                    </picture>
-                    <figcaption
-                      class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center -mt-3"
-                    >
-                      Download Reality Composer
-                    </figcaption>
-                  </figure>
-                  <figure class="py-0.5 px-1 my-1 rounded">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=avif&width=400,
-                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=avif&width=800 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=webp&width=400,
-                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=webp&width=800 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=jpeg&width=400,
-                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=jpeg&width=800 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/halloween-mask/3d-object-in-reality-composer.png?width=400"
-                        srcset="
-                          ./images/halloween-mask/3d-object-in-reality-composer.png?width=400,
-                          ./images/halloween-mask/3d-object-in-reality-composer.png?width=800 2x
-                        "
-                        alt="Apple Reality Composer"
-                        class="mx-auto"
-                      />
-                    </picture>
-                    <figcaption
-                      class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center -mt-3"
-                    >
-                      Apple Reality Composer
-                    </figcaption>
-                  </figure>
-                  <figure class="py-0.5 px-1 my-1 rounded">
-                    <picture>
-                      <source
-                        srcset="
-                          ./images/halloween-mask/reality-composer-export.png?as=avif&width=200,
-                          ./images/halloween-mask/reality-composer-export.png?as=avif&width=400 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
-                          ./images/halloween-mask/reality-composer-export.png?as=webp&width=200,
-                          ./images/halloween-mask/reality-composer-export.png?as=webp&width=400 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
-                          ./images/halloween-mask/reality-composer-export.png?as=jpeg&width=200,
-                          ./images/halloween-mask/reality-composer-export.png?as=jpeg&width=400 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/halloween-mask/reality-composer-export.png?width=200"
-                        srcset="
-                          ./images/halloween-mask/reality-composer-export.png?width=200,
-                          ./images/halloween-mask/reality-composer-export.png?width=400 2x
-                        "
-                        alt="Apple Reality Composer Export"
-                        class="mx-auto"
-                      />
-                    </picture>
-                    <figcaption
-                      class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center -mt-3"
-                    >
-                      Apple Reality Composer Export
-                    </figcaption>
-                  </figure>
-                </div>
-              </div>
-            </li>
-            <li>
+                      " alt="Mask file" class="mx-auto" />
+                </picture>
+                <figcaption
+                  class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center -mt-1 md:-mt-3">
+                  Mask file
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+          <li>
+            <div class="flex flex-col">
               <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
-                Send file to iOS device with AirDrop for example.
+                Download
+                <a href="https://developer.apple.com/augmented-reality/tools/files/Reality_Converter_beta_6.dmg"
+                  class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5">Apple
+                  Reality Converter</a>
+                from
+                <a href="https://developer.apple.com/augmented-reality/tools/#main"
+                  class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5">Apple
+                  website</a>. Drop mask file and convert to .usdz - File → Export.
               </p>
-            </li>
-            <li>
-              <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
-                Open
-                <a
-                  href="https://apps.apple.com/us/app/reality-composer/id1462358802"
-                  class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5"
-                  >Apple Reality Composer</a
-                >
-                and import the file.
-              </p>
-              <ol
-                class="list-decimal list-inside flex flex-col ml-6 marker:float-left marker:pr-1 marker:text-lg marker:leading-tight md:marker:pr-1.5 md:marker:text-xl md:marker:leading-snug md:list-outside md:ml-10"
-              >
-                <li>
-                  <p
-                    class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl"
-                  >
-                    Start a new Project, choose Face and attach mask to face.
-                  </p>
-                </li>
-                <li>
-                  <p
-                    class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl"
-                  >
-                    Click share button to export file.
-                  </p>
-                </li>
-                <li>
-                  <p
-                    class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl"
-                  >
-                    This .usdz file can be sent via iMessage, mail and embedded
-                    in Web.
-                  </p>
-                </li>
-              </ol>
-            </li>
-          </ul>
-        </article>
-      </section>
-      <hr />
-      <section class="px-3 py-9 md:py-20">
-        <article class="max-w-xl mx-auto hyphens-auto" lang="en">
-          <h2
-            class="font-roboto font-medium text-2xl leading-7 md:leading-9 md:text-3xl"
-          >
-            Apartment plan
-          </h2>
-          <ul
-            class="list-decimal list-inside flex flex-col marker:float-left marker:pr-1 marker:text-xl marker:leading-tight md:marker:pr-1.5 md:marker:text-2xl md:marker:leading-snug md:list-outside"
-          >
-            <li>
-              <div class="flex items-center justify-between">
-                <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
-                  Find in App Store any app which using
-                  <a
-                    href="https://developer.apple.com/documentation/homekit"
-                    class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5"
-                    >AR Home Kit</a
-                  >. For example
-                  <a
-                    href="https://apps.apple.com/ru/app/polycam-lidar-3d-scanner/id1532482376"
-                    class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5"
-                    >Polycam</a
-                  >.
-                </p>
+              <div class="grid grid-cols-2 items-center justify-center">
                 <figure class="py-0.5 px-1 my-1 rounded">
                   <picture>
-                    <source
-                      srcset="
-                        ./images/cian/polycam-app-screenshot.png?as=avif&width=400,
-                        ./images/cian/polycam-app-screenshot.png?as=avif&width=800 2x
-                      "
-                      type="image/avif"
-                    />
-                    <source
-                      srcset="
-                        ./images/cian/polycam-app-screenshot.png?as=webp&width=400,
-                        ./images/cian/polycam-app-screenshot.png?as=webp&width=800 2x
-                      "
-                      type="image/webp"
-                    />
-                    <source
-                      srcset="
-                        ./images/cian/polycam-app-screenshot.png?as=jpeg&width=400,
-                        ./images/cian/polycam-app-screenshot.png?as=jpeg&width=800 2x
-                      "
-                      type="image/jpeg"
-                    />
-                    <img
-                      src="./images/cian/polycam-app-screenshot.png?width=400"
-                      srcset="
-                        ./images/cian/polycam-app-screenshot.png?width=400,
-                        ./images/cian/polycam-app-screenshot.png?width=800 2x
-                      "
-                      alt="Polycam app"
-                      class="mx-auto"
-                    />
+                    <source srcset="
+                          ./images/halloween-mask/download-reality-composer.png?as=avif&width=400,
+                          ./images/halloween-mask/download-reality-composer.png?as=avif&width=800 2x
+                        " type="image/avif" />
+                    <source srcset="
+                          ./images/halloween-mask/download-reality-composer.png?as=webp&width=400,
+                          ./images/halloween-mask/download-reality-composer.png?as=webp&width=800 2x
+                        " type="image/webp" />
+                    <source srcset="
+                          ./images/halloween-mask/download-reality-composer.png?as=jpeg&width=400,
+                          ./images/halloween-mask/download-reality-composer.png?as=jpeg&width=800 2x
+                        " type="image/jpeg" />
+                    <img src="./images/halloween-mask/download-reality-composer.png?width=400" srcset="
+                          ./images/halloween-mask/download-reality-composer.png?width=400,
+                          ./images/halloween-mask/download-reality-composer.png?width=800 2x
+                        " alt="Download Reality Composer" class="mx-auto" />
                   </picture>
                   <figcaption
-                    class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center -mt-3"
-                  >
-                    Polycam app in App Store
+                    class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center -mt-1 md:-mt-3">
+                    Download Reality Composer
+                  </figcaption>
+                </figure>
+                <figure class="py-0.5 px-1 my-1 rounded">
+                  <picture>
+                    <source srcset="
+                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=avif&width=400,
+                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=avif&width=800 2x
+                        " type="image/avif" />
+                    <source srcset="
+                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=webp&width=400,
+                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=webp&width=800 2x
+                        " type="image/webp" />
+                    <source srcset="
+                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=jpeg&width=400,
+                          ./images/halloween-mask/3d-object-in-reality-composer.png?as=jpeg&width=800 2x
+                        " type="image/jpeg" />
+                    <img src="./images/halloween-mask/3d-object-in-reality-composer.png?width=400" srcset="
+                          ./images/halloween-mask/3d-object-in-reality-composer.png?width=400,
+                          ./images/halloween-mask/3d-object-in-reality-composer.png?width=800 2x
+                        " alt="Apple Reality Composer" class="mx-auto" />
+                  </picture>
+                  <figcaption
+                    class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center -mt-1 md:-mt-3">
+                    Apple Reality Composer
+                  </figcaption>
+                </figure>
+                <figure class="py-0.5 px-1 my-1 rounded">
+                  <picture>
+                    <source srcset="
+                          ./images/halloween-mask/reality-composer-export.png?as=avif&width=200,
+                          ./images/halloween-mask/reality-composer-export.png?as=avif&width=400 2x
+                        " type="image/avif" />
+                    <source srcset="
+                          ./images/halloween-mask/reality-composer-export.png?as=webp&width=200,
+                          ./images/halloween-mask/reality-composer-export.png?as=webp&width=400 2x
+                        " type="image/webp" />
+                    <source srcset="
+                          ./images/halloween-mask/reality-composer-export.png?as=jpeg&width=200,
+                          ./images/halloween-mask/reality-composer-export.png?as=jpeg&width=400 2x
+                        " type="image/jpeg" />
+                    <img src="./images/halloween-mask/reality-composer-export.png?width=200" srcset="
+                          ./images/halloween-mask/reality-composer-export.png?width=200,
+                          ./images/halloween-mask/reality-composer-export.png?width=400 2x
+                        " alt="Apple Reality Composer Export" class="mx-auto" />
+                  </picture>
+                  <figcaption
+                    class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center -mt-1 md:-mt-3">
+                    Apple Reality Composer Export
                   </figcaption>
                 </figure>
               </div>
-            </li>
-
-            <li>
-              <div class="flex flex-col">
+            </div>
+          </li>
+          <li>
+            <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
+              Send file to iOS device with AirDrop for example.
+            </p>
+          </li>
+          <li>
+            <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
+              Open
+              <a href="https://apps.apple.com/us/app/reality-composer/id1462358802"
+                class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5">Apple
+                Reality Composer</a>
+              and import the file.
+            </p>
+            <ol
+              class="list-decimal list-inside flex flex-col ml-6 marker:float-left marker:pr-1 marker:text-lg marker:leading-tight md:marker:pr-1.5 md:marker:text-xl md:marker:leading-snug md:list-outside md:ml-10">
+              <li>
                 <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
-                  Export it as a 2D plan with measures or .usdz 3D object.
-                  <ol
-                  class="list-disc list-inside flex flex-col ml-6 marker:float-left marker:pr-1 marker:text-lg marker:leading-tight md:marker:pr-1.5 md:marker:text-xl md:marker:leading-snug md:list-outside md:ml-10"
-                >
-            <li>
-              <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">There is probation period for testing needs. Don't forget
-                unsubscribe!</small
-              >
-            </li>
-          </ol>
+                  Start a new Project, choose Face and attach mask to face.
                 </p>
-                <div class="grid grid-cols-2 items-center justify-center">
-                  <figure class="py-0.5 px-1 my-1 rounded">
-                    <picture>
-                      <source
-                        srcset="
+              </li>
+              <li>
+                <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
+                  Click share button to export file.
+                </p>
+              </li>
+              <li>
+                <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
+                  This .usdz file can be sent via iMessage, mail and embedded
+                  in Web.
+                </p>
+              </li>
+            </ol>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <hr />
+    <section class="px-3 py-9 md:py-20">
+      <article class="max-w-xl mx-auto hyphens-auto" lang="en">
+        <h2 class="font-roboto font-medium text-2xl leading-7 md:leading-9 md:text-3xl">
+          Apartment plan
+        </h2>
+        <ul
+          class="list-decimal list-inside flex flex-col marker:float-left marker:pr-1 marker:text-xl marker:leading-tight md:marker:pr-1.5 md:marker:text-2xl md:marker:leading-snug md:list-outside">
+          <li>
+            <div class="flex items-center justify-between">
+              <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
+                Find in App Store any app which using
+                <a href="https://developer.apple.com/documentation/homekit"
+                  class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5">AR
+                  Home Kit</a>. For example
+                <a href="https://apps.apple.com/ru/app/polycam-lidar-3d-scanner/id1532482376"
+                  class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5">Polycam</a>.
+              </p>
+              <figure class="py-0.5 px-1 my-1 rounded">
+                <picture>
+                  <source srcset="
+                        ./images/cian/polycam-app-screenshot.png?as=avif&width=400,
+                        ./images/cian/polycam-app-screenshot.png?as=avif&width=800 2x
+                      " type="image/avif" />
+                  <source srcset="
+                        ./images/cian/polycam-app-screenshot.png?as=webp&width=400,
+                        ./images/cian/polycam-app-screenshot.png?as=webp&width=800 2x
+                      " type="image/webp" />
+                  <source srcset="
+                        ./images/cian/polycam-app-screenshot.png?as=jpeg&width=400,
+                        ./images/cian/polycam-app-screenshot.png?as=jpeg&width=800 2x
+                      " type="image/jpeg" />
+                  <img src="./images/cian/polycam-app-screenshot.png?width=400" srcset="
+                        ./images/cian/polycam-app-screenshot.png?width=400,
+                        ./images/cian/polycam-app-screenshot.png?width=800 2x
+                      " alt="Polycam app" class="mx-auto" />
+                </picture>
+                <figcaption
+                  class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center -mt-1 md:-mt-3">
+                  Polycam app in App Store
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+
+          <li>
+            <div class="flex flex-col">
+              <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
+                Export it as a 2D plan with measures or .usdz 3D object.
+              <ol
+                class="list-disc list-inside flex flex-col ml-6 marker:float-left marker:pr-1 marker:text-lg marker:leading-tight md:marker:pr-1.5 md:marker:text-xl md:marker:leading-snug md:list-outside md:ml-10">
+                <li>
+                  <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">There is probation period for testing
+                    needs. Don't forget
+                    unsubscribe!</small>
+                </li>
+              </ol>
+              </p>
+              <div class="grid grid-cols-2 items-center justify-center">
+                <figure class="py-0.5 px-1 my-1 rounded">
+                  <picture>
+                    <source srcset="
                           ./images/cian/polycam-share.jpeg?as=avif&width=200,
                           ./images/cian/polycam-share.jpeg?as=avif&width=400 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
+                        " type="image/avif" />
+                    <source srcset="
                           ./images/cian/polycam-share.jpeg?as=webp&width=200,
                           ./images/cian/polycam-share.jpeg?as=webp&width=400 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
+                        " type="image/webp" />
+                    <source srcset="
                           ./images/cian/polycam-share.jpeg?as=jpeg&width=200,
                           ./images/cian/polycam-share.jpeg?as=jpeg&width=400 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/cian/polycam-share.jpeg?width=200"
-                        srcset="
+                        " type="image/jpeg" />
+                    <img src="./images/cian/polycam-share.jpeg?width=200" srcset="
                           ./images/cian/polycam-share.jpeg?width=200,
                           ./images/cian/polycam-share.jpeg?width=400 2x
-                        "
-                        alt="Share model"
-                        class="mx-auto"
-                      />
-                    </picture>
-                    <figcaption
-                      class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center mt-3"
-                    >
-                      Share model
-                    </figcaption>
-                  </figure>
-                  <figure class="py-0.5 px-1 my-1 rounded">
-                    <picture>
-                      <source
-                        srcset="
+                        " alt="Share model" class="mx-auto" />
+                  </picture>
+                  <figcaption class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center mt-3">
+                    Share model
+                  </figcaption>
+                </figure>
+                <figure class="py-0.5 px-1 my-1 rounded">
+                  <picture>
+                    <source srcset="
                           ./images/cian/polycam-imessage.jpeg?as=avif&width=400,
                           ./images/cian/polycam-imessage.jpeg?as=avif&width=800 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
+                        " type="image/avif" />
+                    <source srcset="
                           ./images/cian/polycam-imessage.jpeg?as=webp&width=400,
                           ./images/cian/polycam-imessage.jpeg?as=webp&width=800 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
+                        " type="image/webp" />
+                    <source srcset="
                           ./images/cian/polycam-imessage.jpeg?as=jpeg&width=400,
                           ./images/cian/polycam-imessage.jpeg?as=jpeg&width=800 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/cian/polycam-imessage.jpeg?width=400"
-                        srcset="
+                        " type="image/jpeg" />
+                    <img src="./images/cian/polycam-imessage.jpeg?width=400" srcset="
                           ./images/cian/polycam-imessage.jpeg?width=400,
                           ./images/cian/polycam-imessage.jpeg?width=800 2x
-                        "
-                        alt="Share via iMessage"
-                        class="mx-auto"
-                      />
-                    </picture>
-                    <figcaption
-                      class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center mt-3"
-                    >
-                      Share via iMessage
-                    </figcaption>
-                  </figure>
-                  <figure class="py-0.5 px-1 my-1 rounded">
-                    <picture>
-                      <source
-                        srcset="
+                        " alt="Share via iMessage" class="mx-auto" />
+                  </picture>
+                  <figcaption class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center mt-3">
+                    Share via iMessage
+                  </figcaption>
+                </figure>
+                <figure class="py-0.5 px-1 my-1 rounded">
+                  <picture>
+                    <source srcset="
                           ./images/cian/polycam-airdrop.jpeg?as=avif&width=200,
                           ./images/cian/polycam-airdrop.jpeg?as=avif&width=400 2x
-                        "
-                        type="image/avif"
-                      />
-                      <source
-                        srcset="
+                        " type="image/avif" />
+                    <source srcset="
                           ./images/cian/polycam-airdrop.jpeg?as=webp&width=200,
                           ./images/cian/polycam-airdrop.jpeg?as=webp&width=400 2x
-                        "
-                        type="image/webp"
-                      />
-                      <source
-                        srcset="
+                        " type="image/webp" />
+                    <source srcset="
                           ./images/cian/polycam-airdrop.jpeg?as=jpeg&width=200,
                           ./images/cian/polycam-airdrop.jpeg?as=jpeg&width=400 2x
-                        "
-                        type="image/jpeg"
-                      />
-                      <img
-                        src="./images/cian/polycam-airdrop.jpeg?width=200"
-                        srcset="
+                        " type="image/jpeg" />
+                    <img src="./images/cian/polycam-airdrop.jpeg?width=200" srcset="
                           ./images/cian/polycam-airdrop.jpeg?width=200,
                           ./images/cian/polycam-airdrop.jpeg?width=400 2x
-                        "
-                        alt="Send file via AirDrop"
-                        class="mx-auto"
-                      />
-                    </picture>
-                    <figcaption
-                      class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center mt-3"
-                    >
-                      Send file via AirDrop
-                    </figcaption>
-                  </figure>
-                </div>
+                        " alt="Send file via AirDrop" class="mx-auto" />
+                  </picture>
+                  <figcaption class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center mt-3">
+                    Send file via AirDrop
+                  </figcaption>
+                </figure>
               </div>
-            </li>
-          </ul>
-        </article>
-      </section>
-      <hr>
-    </main>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <hr>
+    <section class="px-3 py-9 md:py-20">
+      <article class="max-w-xl mx-auto hyphens-auto" lang="en">
+        <h2 class="font-roboto font-medium text-2xl leading-7 md:leading-9 md:text-3xl">
+          Historic articles
+        </h2>
+        <ul
+          class="list-decimal list-inside flex flex-col marker:float-left marker:pr-1 marker:text-xl marker:leading-tight md:marker:pr-1.5 md:marker:text-2xl md:marker:leading-snug md:list-outside">
+          <li>
+            <div class="flex items-center justify-between">
+              <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
+                Find in App Store app to make 3D object. For example
+                <a href="https://apps.apple.com/ru/app/polycam-lidar-3d-scanner/id1532482376"
+                  class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5">Polycam</a>.
 
-    <h2>Historic articles</h2>
-    <article class="text" lang="en">
-      <ol>
-        <li>
-          <figure>
-            <picture>
-              <source
-                srcset="
-                  ./images/dino/polycam-app-screenshot.png?as=avif&width=400,
-                  ./images/dino/polycam-app-screenshot.png?as=avif&width=800 2x
-                "
-                type="image/avif"
-              />
-              <source
-                srcset="
-                  ./images/dino/polycam-app-screenshot.png?as=webp&width=400,
-                  ./images/dino/polycam-app-screenshot.png?as=webp&width=800 2x
-                "
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  ./images/dino/polycam-app-screenshot.png?as=jpeg&width=400,
-                  ./images/dino/polycam-app-screenshot.png?as=jpeg&width=800 2x
-                "
-                type="image/jpeg"
-              />
-              <img
-                src="./images/dino/polycam-app-screenshot.png?width=400"
-                srcset="
-                  ./images/dino/polycam-app-screenshot.png?width=400,
-                  ./images/dino/polycam-app-screenshot.png?width=800 2x
-                "
-                alt="Polycam app"
-              />
-            </picture>
-            <figcaption>Polycam app in App Store</figcaption>
-          </figure>
-          Find in <a href="">App Store</a> app to make 3D object. For example
-          <a
-            href="https://apps.apple.com/ru/app/polycam-lidar-3d-scanner/id1532482376"
-            >Polycam</a
-          >.
-        </li>
-        <li>
-          Follow <a href="https://poly.cam/object-capture">instructions</a> for
-          cloud rendering objects.
-        </li>
-      </ol>
-    </article>
+              </p>
+              <figure class="py-0.5 px-1 my-1 rounded">
+                <picture>
+                  <source srcset="
+                        ./images/dino/polycam-app-screenshot.png?as=avif&width=400,
+                        ./images/dino/polycam-app-screenshot.png?as=avif&width=800 2x
+                      " type="image/avif" />
+                  <source srcset="
+                        ./images/dino/polycam-app-screenshot.png?as=webp&width=400,
+                        ./images/dino/polycam-app-screenshot.png?as=webp&width=800 2x
+                      " type="image/webp" />
+                  <source srcset="
+                        ./images/dino/polycam-app-screenshot.png?as=jpeg&width=400,
+                        ./images/dino/polycam-app-screenshot.png?as=jpeg&width=800 2x
+                      " type="image/jpeg" />
+                  <img src="./images/dino/polycam-app-screenshot.png?width=400" srcset="
+                        ./images/dino/polycam-app-screenshot.png?width=400,
+                        ./images/dino/polycam-app-screenshot.png?width=800 2x
+                      " alt="Polycam app" class="mx-auto" />
+                </picture>
+                <figcaption
+                  class="text-custom-dark-grey text-xs font-semibold tracking-tight text-center -mt-1 md:-mt-3">
+                  Polycam app in App Store
+                </figcaption>
+              </figure>
+            </div>
+          </li>
+          <li>
+            <p class="px-1 py-4 leading-4 text-sm md:leading-6 md:text-xl">
+              Follow <a href="https://poly.cam/object-capture"
+                class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5">instructions</a>
+              for
+              cloud rendering objects.
+            </p>
+          </li>
 
-  </body>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+</body>
+
 </html>
