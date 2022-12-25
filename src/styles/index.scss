@@ -1,9 +1,5 @@
-@import 'normalize.css/';
-@import './global-variables.css';
-@import './global-styles.scss';
-@import './cafe.scss';
-@import './ikea.scss';
-@import './halloween.scss';
-@import './school.scss';
-@import './dino.scss';
-@import './cian.scss';
+@import './fonts.scss';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

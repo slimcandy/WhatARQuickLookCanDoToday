@@ -10,45 +10,100 @@
   </head>
 
   <body>
-    <h1>What AR Quick Look can do today?</h1>
-    <article class="text" lang="en">
-      <p>
-        Apple is rumoured to reveal augmented reality glasses next year.
-        Already, iOS devices, one of the few, support AR (augmented reality)
-        technology on websites.
-      </p>
-      <p>
-        Syntax for augmented reality objects requires a link with a rel
-        attribute with the value of ar and a picture inside.
-      </p>
-      <code>
-        &lt;a rel=&quot;ar&quot;
-        href=&quot;/assets/models/my-model.usdz&quot;&gt; &lt;img
-        src=&quot;/assets/models/my-model-thumbnail.jpg&quot; /&gt; &lt;/a&gt;
-      </code>
-      <p>
-        An additional field for the bottom of the view screen allows you
-        to specify the characteristics of the virtual object.
-      </p>
-      <code
-        >https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.usdz#custom=https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.html&customHeight=large</code
-      >
-      <h3>Links</h3>
-      <ol>
-        <li>
-          <a
-            href="https://webkit.org/blog/8421/viewing-augmented-reality-assets-in-safari-for-ios/"
-            >Viewing Augmented Reality Assets in Safari for iOS</a
+    <header class="bg-black flex justify-center items-center gap-2.5 md:gap-3">
+      <h2 class="text-xl md:text-2xl text-white py-5 md:py-4 font-medium">
+        Augmented Reality
+      </h2>
+      <picture>
+        <source
+          srcset="
+            ./images/ARKit-glyph.png?as=avif&width=400,
+            ./images/ARKit-glyph.png?as=avif&width=800 2x
+          "
+          type="image/avif"
+        />
+        <source
+          srcset="
+            ./images/ARKit-glyph.png?as=webp&width=400,
+            ./images/ARKit-glyph.png?as=webp&width=800 2x
+          "
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/ARKit-glyph.png?as=jpeg&width=400,
+            ./images/ARKit-glyph.png?as=jpeg&width=800 2x
+          "
+          type="image/jpeg"
+        />
+        <img
+          src="./images/ARKit-glyph.png?width=48"
+          srcset="
+            ./images/ARKit-glyph.png?width=48,
+            ./images/ARKit-glyph.png?width=96 2x
+          "
+          alt="AR logo"
+          class="w-12"
+        />
+      </picture>
+    </header>
+    <main class="flex flex-col">
+      <section class="bg-custom-grey px-3 py-9 md:py-20">
+        <article class="max-w-xl mx-auto text-justify hyphens-auto" lang="en">
+          <h1
+            class="font-medium text-2xl leading-6 pb-px md:pb-2 md:text-4xl md:leading-10"
           >
-        </li>
-        <li>
-          <a
-            href="https://developer.apple.com/documentation/arkit/adding_an_apple_pay_button_or_a_custom_action_in_ar_quick_look"
-            >Adding an Apple Pay Button or a Custom Action in AR Quick Look</a
+            What AR Quick Look can do today?
+          </h1>
+          <p
+            class="leading-4 text-sm my-2.5 first-line:font-semibold first-letter:float-left first-letter:pr-1 first-letter:text-7xl first-letter:leading-tight first-letter:-mb-3 first-letter:-mt-3 md:leading-6 md:text-xl md:my-8 md:first-line:font-bold md:first-letter:pr-1.5 md:first-letter:text-8xl md:first-letter:leading-snug md:first-letter:-mb-5 md:first-letter:-mt-7"
           >
-        </li>
-      </ol>
-    </article>
+            Apple is rumoured to reveal augmented reality glasses next year.
+            Already, iOS devices, one of the few, support AR (augmented reality)
+            technology on websites.
+          </p>
+          <p class="leading-4 text-sm my-2.5 md:leading-6 md:text-xl md:my-8">
+            Syntax for augmented reality objects requires a link with a rel
+            attribute with the value of ar and a picture inside.
+          </p>
+          <code
+            class="leading-4 text-sm my-2.5 select-all break-words md:leading-6 md:text-xl md:my-8"
+          >
+            &lt;a rel=&quot;ar&quot;
+            href=&quot;/assets/models/my-model.usdz&quot;&gt; &lt;img
+            src=&quot;/assets/models/my-model-thumbnail.jpg&quot; /&gt;
+            &lt;/a&gt;
+          </code>
+          <p class="leading-4 text-sm my-2.5 md:leading-6 md:text-xl md:my-8">
+            An additional field for the bottom of the view screen allows you
+            to specify the characteristics of the virtual object.
+          </p>
+          <code
+            class="leading-4 text-sm my-2.5 select-all break-words md:leading-6 md:text-xl md:my-8"
+            >https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.usdz#custom=https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.html&customHeight=large</code
+          >
+          <hr class="mt-4 mb-2 md:mt-8 md:mb-4" />
+          <ol class="list-disc leading-6 text-sm md:leading-8 md:text-xl">
+            <li>
+              <a
+                href="https://webkit.org/blog/8421/viewing-augmented-reality-assets-in-safari-for-ios/"
+                class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5"
+                >Viewing Augmented Reality Assets in Safari for iOS</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://developer.apple.com/documentation/arkit/adding_an_apple_pay_button_or_a_custom_action_in_ar_quick_look"
+                class="px-2 py-1 text-custom-link underline hover:text-white hover:bg-custom-link after:content-['↗'] after:ml-0.5"
+                >Adding an Apple Pay Button or a Custom Action in AR Quick
+                Look</a
+              >
+            </li>
+          </ol>
+        </article>
+      </section>
+    </main>
+
     <h2>Furnish your room</h2>
     <article class="ikea" lang="ru">
       <ul>

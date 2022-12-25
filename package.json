@@ -18,6 +18,7 @@
     "@parcel/transformer-sass": "^2.8.2",
     "@typescript-eslint/eslint-plugin": "^5.41.0",
     "@typescript-eslint/parser": "^5.41.0",
+    "autoprefixer": "^10.4.13",
     "eslint": "^8.26.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-airbnb-typescript": "^17.0.0",
@@ -25,13 +26,16 @@
     "eslint-plugin-import": "^2.26.0",
     "husky": "^8.0.0",
     "parcel": "^2.7.0",
+    "postcss": "^8.4.20",
     "prettier": "2.7.1",
-    "sharp": "^0.31.2"
+    "sharp": "^0.31.2",
+    "tailwindcss": "^3.2.4",
+    "tailwindcss-hyphens": "^0.1.0"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
   },
-  "browserlist": [
+  "browserslist": [
     "last 2 versions",
     "not dead"
   ]
