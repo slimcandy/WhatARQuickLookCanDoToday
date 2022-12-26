@@ -1,6 +1,6 @@
 // Halloween masks offical website.
 const halloweenLinkElement = document.getElementById(
-  'halloween-link'
+  'halloween-link',
 ) as HTMLAnchorElement;
 
 const halloweenHandleMessage = (event: MessageEvent) => {
@@ -15,6 +15,6 @@ if (halloweenLinkElement) {
   halloweenLinkElement.addEventListener(
     'message',
     halloweenHandleMessage as EventListener,
-    false
+    false,
   );
 }

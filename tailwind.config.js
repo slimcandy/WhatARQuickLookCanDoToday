@@ -14,7 +14,10 @@ module.exports = {
         'custom-dark-grey': '#6e6e73',
         'custom-yellow': '#fcff00',
         'custom-white': '#4e4e4eba',
-        'custom-white-shadow': '#9b9b9b'
+        'custom-white-shadow': '#9b9b9b',
+        'custom-cian-bg': '#f4f4f4',
+        'custom-cian-blue': '#0468ff',
+        'custom-cian-blue-button-hover': '#0661ec'
       },
       backgroundImage: {
         'ar-glyph': "url('/src/images/ARKit-glyph.png')"
