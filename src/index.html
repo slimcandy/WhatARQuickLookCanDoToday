@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>What AR Quick Look can do today?</title>
+  <script src="./js/halloween.ts" type="module"></script>
   <script src="./js/index.ts" type="module"></script>
   <link rel="stylesheet" href="./styles/index.scss" />
 </head>
@@ -244,7 +245,7 @@
     <hr />
     <section class="bg-black text-white px-3 py-9 md:py-20">
       <article class="max-w-xl mx-auto hyphens-auto" lang="en">
-        <ul class="grid grid-cols-1 items-center justify-center md:grid-cols-3">
+        <ul class="grid grid-cols-1 items-center justify-center md:grid-cols-3 md:gap-2">
           <li class="hidden flex-col items-center md:flex">
             <picture>
               <source srcset="
@@ -294,7 +295,7 @@
               <img src="./images/halloween-mask/pumpkin-mask-1.jpg?width=400" srcset="
                   ./images/halloween-mask/pumpkin-mask-1.jpg?width=400,
                   ./images/halloween-mask/pumpkin-mask-1.jpg?width=800 2x
-                " alt="Halloween mask in AR" class="sr-only" />
+                " alt="Halloween mask in AR" class="sr-only" id="halloween-link" />
             </a>
             <h3 class="text-base md:text-lg tracking-widest leading-tight text-center">
               <a href="#mask" class="uppercase">NEW "The Pumpkin Watcher" HD Studios Pro Mask</a>
