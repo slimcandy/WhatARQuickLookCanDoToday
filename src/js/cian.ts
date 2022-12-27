@@ -1,5 +1,5 @@
 const roomLinkElement = document.getElementById(
-  'room-plan-ar-link'
+  'room-plan-ar-link',
 ) as HTMLAnchorElement;
 
 const roomHandleMessage = (event: MessageEvent) => {
@@ -14,6 +14,6 @@ if (roomLinkElement) {
   roomLinkElement.addEventListener(
     'message',
     roomHandleMessage as EventListener,
-    false
+    false,
   );
 }
