@@ -1,6 +1,6 @@
 // Dino wiki page.
 const dinoLinkElement = document.getElementById(
-  'dino-ar-link'
+  'dino-ar-link',
 ) as HTMLAnchorElement;
 
 const dinoHandleMessage = (event: MessageEvent) => {
@@ -15,6 +15,6 @@ if (dinoLinkElement) {
   dinoLinkElement.addEventListener(
     'message',
     dinoHandleMessage as EventListener,
-    false
+    false,
   );
 }

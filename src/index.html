@@ -44,15 +44,23 @@
           What AR Quick Look can do today?
         </h1>
         <p
-          class="leading-4 text-sm my-2.5 first-line:font-semibold first-letter:float-left first-letter:pr-1 first-letter:text-7xl first-letter:leading-tight first-letter:-mb-3 first-letter:-mt-1 md:-mt-3 md:leading-6 md:text-xl md:my-8 md:first-line:font-bold md:first-letter:pr-1.5 md:first-letter:text-8xl md:first-letter:leading-snug md:first-letter:-mb-5 md:first-letter:-mt-7">
-          Apple is rumoured to reveal augmented reality glasses next year.
-          Already, iOS devices, one of the few, support AR (augmented reality)
-          technology on websites.
+          class="leading-4 text-sm my-2.5 first-line:font-semibold first-letter:float-left first-letter:pr-1 first-letter:text-7xl first-letter:leading-tight first-letter:-mb-3 first-letter:-mt-1 md:-mt-3 md:leading-6 md:text-xl md:my-8 md:first-line:font-bold md:first-letter:pr-1.5 md:first-letter:text-8xl md:first-letter:leading-snug md:first-letter:-mb-5 md:first-letter:-mt-7 ">
+          Apple is rumoured to reveal AR glasses this year. iOS devices already support AR (augmented reality)
+          technology on websites. This website is a real-world applications showcase.
         </p>
         <p class="leading-4 text-sm my-2.5 md:leading-6 md:text-xl md:my-8">
-          Syntax for augmented reality objects requires a link with a rel
-          attribute with the value of ar and a picture inside.
+          Web AR syntax requires a link with <code>rel="ar"</code> attribute, ar-object link and a picture inside.
         </p>
+        <pre>
+          <code>
+            &lt;a rel=&quot;ar&quot;
+            href=&quot;/assets/models/my-model.usdz&quot;&gt;
+              &lt;img
+                src=&quot;/assets/models/my-model-thumbnail.jpg&quot;
+              /&gt;
+            &lt;/a&gt;
+          </code>
+        </pre class>
         <code class="leading-4 text-sm my-2.5 select-all break-words md:leading-6 md:text-xl md:my-8">
             &lt;a rel=&quot;ar&quot;
             href=&quot;/assets/models/my-model.usdz&quot;&gt; &lt;img
@@ -60,11 +68,10 @@
             &lt;/a&gt;
           </code>
         <p class="leading-4 text-sm my-2.5 md:leading-6 md:text-xl md:my-8">
-          An additional field for the bottom of the view screen allows you
-          to specify the characteristics of the virtual object.
+          Pay Button requires link hash parameters, for example <code>applePayButtonType</code>. Custom banner syntax:
         </p>
         <code
-          class="leading-4 text-sm my-2.5 select-all break-words md:leading-6 md:text-xl md:my-8">https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.usdz#custom=https://WhatARQuickLookCanDoToday.js.garden/pumplin-head.html&customHeight=large</code>
+          class="leading-4 text-sm my-2.5 select-all break-words md:leading-6 md:text-xl md:my-8">https://whatarquicklookcandotoday.js.garden/ar-objects/Mask_pumpkin.usdz#custom=https://whatarquicklookcandotoday.js.garden/ar-banner.html</code>
         <hr class="mt-4 mb-2 md:mt-8 md:mb-4" />
         <ol class="list-disc leading-6 text-sm md:leading-8 md:text-xl list-outside">
           <li>
