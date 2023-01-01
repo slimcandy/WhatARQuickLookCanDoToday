@@ -1,8 +1,8 @@
 const headerForNoAR = document.getElementById(
-  'header-for-no-ar'
+  'header-for-no-ar',
 ) as HTMLAnchorElement;
 const headerForAR = document.getElementById(
-  'header-for-ar'
+  'header-for-ar',
 ) as HTMLAnchorElement;
 
 const a: HTMLAnchorElement = document.createElement('a');

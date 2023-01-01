@@ -1,7 +1,7 @@
 {
-  "name": "webpack",
+  "name": "WhatARQuickLookCanDoToday",
   "version": "1.0.0",
-  "description": "",
+  "description": "A real-world applications for AR Quick Look showcase.",
   "private": "true",
   "scripts": {
     "start": "npx parcel src/index.html src/ar-banner.html --no-cache",
@@ -11,8 +11,14 @@
     "test": "npm run format && npm run lint",
     "prepare": "husky install"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "ar",
+    "quicklook",
+    "iphone",
+    "augmented-reality",
+    "apple"
+  ],
+  "author": "slimcandy",
   "license": "ISC",
   "devDependencies": {
     "@parcel/transformer-jsonld": "^2.8.2",
@@ -31,7 +37,8 @@
     "prettier": "2.7.1",
     "sharp": "^0.31.2",
     "tailwindcss": "^3.2.4",
-    "tailwindcss-hyphens": "^0.1.0"
+    "tailwindcss-hyphens": "^0.1.0",
+    "tailwindcss-text-rendering": "file:./tailwindcss-text-rendering"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
