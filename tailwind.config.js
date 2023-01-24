@@ -9,15 +9,15 @@ module.exports = {
         roboto: ['"Roboto"', ...defaultTheme.fontFamily.sans]
       },
       colors: {
-        'custom-grey': '#D9D9D93D',
-        'custom-link': '#0066CC',
+        'custom-grey': '`#D9D9D93D`',
+        'custom-link': 'color(rec2020 0 0.3417 1)',
         'custom-dark-grey': '#6e6e73',
-        'custom-yellow': '#fcff00',
+        'custom-yellow': 'color(rec2020 0.9508 1 0.0035)',
         'custom-white': '#4e4e4eba',
         'custom-white-shadow': '#9b9b9b',
         'custom-cian-bg': '#f4f4f4',
-        'custom-cian-blue': '#0468ff',
-        'custom-cian-blue-button-hover': '#0661ec',
+        'custom-cian-blue': 'color(rec2020 0 0.3387 1)',
+        'custom-cian-blue-button-hover': 'color(rec2020 0 0.3092 1)',
         'prose-pre-bg': '#1e293b'
       },
       backgroundImage: {
