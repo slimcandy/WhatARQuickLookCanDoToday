@@ -1,13 +1,7 @@
-const defaultTheme = require('tailwindcss/defaultTheme');
-
 module.exports = {
-  content: ['./src/**/*.{html,js,ts,jsx,tsx}'],
+  content: ['./src/**/*.html'],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['"Montserrat"', ...defaultTheme.fontFamily.sans],
-        roboto: ['"Roboto"', ...defaultTheme.fontFamily.sans]
-      },
       colors: {
         'custom-grey': '`#D9D9D93D`',
         'custom-link': 'color(rec2020 0 0.3417 1)',

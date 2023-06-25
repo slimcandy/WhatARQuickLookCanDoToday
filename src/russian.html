@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Повысь продажи 2</title>
+  <link rel="stylesheet" href="./styles/index.scss" />
+  <script src="./js/glasses.ts" type="module" defer></script>
+</head>
+
+<body>
+  <header class="bg-gray-100 p-6 md:flex md:items-center md:justify-between">
+    <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-0">Примерка очков в дополненной реальности</h1>
+    <nav class="md:flex md:gap-8">
+      <a href="#offer" class="block py-1 md:py-0 text-gray-700">Предложение</a>
+      <a href="#advantages" class="block py-1 md:py-0 text-gray-700">Преимущества</a>
+      <a href="#example" class="block py-1 md:py-0 text-gray-700">Живой пример</a>
+    </nav>
+    <a href="#contact" class="inline-block mt-4 md:mt-0 md:ml-8 py-2 px-6 text-white bg-gray-800 rounded">Получить
+      консультацию</a>
+  </header>
+
+  <main>
+    <section id="offer" class="md:flex md:justify-between md:items-center p-6 bg-blue-50">
+      <div class="mb-4 md:mb-0 md:w-1/2">
+        <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">💫 Примерка очков стала проще благодаря AR!
+        </h2>
+        <p class="text-gray-800">С нашим решением AR Quick Look, ваши клиенты могут виртуально примерять очки прямо с их
+          iPhone, не покидая уют своего дома. Улучшите взаимодействие с клиентами и увеличьте продажи уже сегодня!</p>
+      </div>
+      <div class="md:w-1/2">
+        <video class="w-full h-auto max-h-[80vh]" autoplay muted loop>
+          <source src="../videos/show-case.MP4" type="video/mp4">
+        </video>
+      </div>
+    </section>
+
+    <section id="advantages" class="bg-white p-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">🎯 Почему выбирают AR Quick Look?</h2>
+      <div class="grid 
+      grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
+      gap-4">
+        <article class="bg-blue-50 p-4 rounded shadow">
+          <h3 class="font-bold mb-2">🌐 Онлайн примерка</h3>
+          <p class="text-gray-800">Покупатели могут примерять очки без посещения магазина.</p>
+        </article>
+        <article class="bg-blue-50 p-4 rounded shadow">
+          <h3 class="font-bold mb-2">🛡 Приватность</h3>
+          <p class="text-gray-800">Изображение с камеры остается на iPhone и не передается на сайт.</p>
+        </article>
+        <article class="bg-blue-50 p-4 rounded shadow">
+          <h3 class="font-bold mb-2">🌐 Онлайн примерка</h3>
+          <p class="text-gray-800">Покупатели могут примерять очки без посещения магазина.</p>
+        </article>
+        <article class="bg-blue-50 p-4 rounded shadow">
+          <h3 class="font-bold mb-2">👌 Лёгкость использования</h3>
+          <p class="text-gray-800">Не нужно скачивать плагины и устанавливать программы.</p>
+        </article>
+        <article class="bg-blue-50 p-4 rounded shadow">
+          <h3 class="font-bold mb-2">📱 Эксклюзивность</h3>
+          <p class="text-gray-800">Работает только на iPhone, обеспечивая целевую аудиторию состоятельных пользователей.
+          </p>
+        </article>
+        <article class="bg-blue-50 p-4 rounded shadow">
+          <h3 class="font-bold mb-2">🗣 Сарафанное радио</h3>
+          <p class="text-gray-800">Пользователи могут взаимодействовать и делиться впечатлениями с друзьями.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="example" class="bg-white p-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">👓 Пример</h2>
+      <article class="md:flex md:items-start bg-blue-50 p-4 rounded shadow-lg">
+        <div class="md:w-1/2">
+          <h3 class="font-bold mb-2">Солнечные очки Tom Ford 288 50F Lennon</h3>
+          <img src="./images/glasses/tom-ford.png?width=400" srcset="
+          ./images/glasses/tom-ford.png?width=400,
+          ./images/glasses/tom-ford.png?width=800 2x
+        " alt="Очки в AR" class="w-full h-auto mb-4" />
+          <a href="./ar-objects/sun_glasses.usdz#custom=https://ar.js.garden/ar-banner.html" rel="ar"
+            id="glasses-ar-link" class="inline-flex items-center gap-x-4 py-2 px-6 text-white bg-gray-800 rounded mb-4">
+            <picture>
+              <source srcset="
+                  ./images/ARKit-glyph.png?as=avif&width=400,
+                  ./images/ARKit-glyph.png?as=avif&width=800 2x
+                " type="image/avif" />
+              <source srcset="
+                  ./images/ARKit-glyph.png?as=webp&width=400,
+                  ./images/ARKit-glyph.png?as=webp&width=800 2x
+                " type="image/webp" />
+              <source srcset="
+                  ./images/ARKit-glyph.png?as=jpeg&width=400,
+                  ./images/ARKit-glyph.png?as=jpeg&width=800 2x
+                " type="image/jpeg" />
+              <img src="./images/ARKit-glyph.png?width=48" srcset="
+                  ./images/ARKit-glyph.png?width=48,
+                  ./images/ARKit-glyph.png?width=96 2x
+                " alt="AR logo" class="w-6" />
+            </picture>
+            <img src="./images/glasses/tom-ford.png?width=400" srcset="
+            ./images/glasses/tom-ford.png?width=400,
+            ./images/glasses/tom-ford.png?width=800 2x
+          " alt="Очки в AR" class="sr-only" />
+            Примерить виртуально
+          </a>
+        </div>
+        <aside class="md:w-1/2 md:pl-8">
+          <p class="font-bold mb-2">Цена: <strong> 23 800 руб.</strong></p>
+          <p class="font-bold mb-2">Доступно: <strong> 5шт.</strong></p>
+          <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-2 hover:bg-blue-700">Добавить в
+            корзину</button>
+          <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-4 hover:bg-blue-700">Купить в 1
+            клик</button>
+
+          <p class="font-bold mb-2">Характеристики товара:</p>
+          <ul class="list-disc pl-5 mb-4">
+            <li>Артикул: 288 50F</li>
+            <li>Пол: Мужские</li>
+            <li>Размер: 51</li>
+            <li>Цвет оправы: Havana</li>
+            <li>Цвет линз: Brown</li>
+            <li>Материал оправы: Пластик</li>
+            <li>Форма оправы: Квадратные</li>
+            <li>Страна производитель: Италия</li>
+          </ul>
+        </aside>
+      </article>
+    </section>
+
+
+    <section id="contacts" class="bg-white p-6">
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">🎁 Ваш бизнес заслуживает лучшего!</h2>
+      <p class="text-gray-800 mb-6">Готовы внедрить AR Quick Look в свой бизнес? Нажмите на кнопку ниже, чтобы начать
+        трансформацию вашего бизнеса уже сегодня!</p>
+      <form action="#send" method="post" class="bg-blue-50 p-4 rounded shadow-lg space-y-4">
+        <label for="contact-info" class="block text-sm font-medium text-gray-700">Оставьте свои контакты и описание
+          вашего сайта с ссылками:</label>
+        <textarea name="contact-info" id="contact-info" cols="30" rows="10"
+          class="w-full h-32 p-2 rounded border-gray-300" required></textarea>
+        <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Начать с AR
+          Quick Look 🚀</button>
+      </form>
+    </section>
+
+  </main>
+</body>
+
+
+
+
+
+</html>
