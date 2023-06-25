@@ -1,5 +1,6 @@
+// Inside AR Quick Look, the user can tap a button to open a link in Safari.
 const glassesLinkElement = document.getElementById(
-  'glasses-ar-link'
+  'glasses-ar-link',
 ) as HTMLAnchorElement;
 
 const glassesHandleMessage = (event: MessageEvent) => {
@@ -13,6 +14,6 @@ if (glassesLinkElement) {
   glassesLinkElement.addEventListener(
     'message',
     glassesHandleMessage as EventListener,
-    false
+    false,
   );
 }

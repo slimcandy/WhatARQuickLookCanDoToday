@@ -5,114 +5,121 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Повысь продажи 2</title>
+  <title>Примерка очков с AR дополненной реальности</title>
+  <meta name="description"
+    content="Усовершенствуйте процесс покупки очков с помощью нашей AR технологии. Предлагайте клиентам уникальный и веселый опыт примерки очков онлайн, увеличивайте взаимодействие и продажи. Опыт дополненной реальности в одном клике!">
+
   <link rel="stylesheet" href="./styles/index.scss" />
   <script src="./js/glasses.ts" type="module" defer></script>
 </head>
 
 <body>
-  <header class="bg-gray-100 p-6 md:flex md:items-center md:justify-between">
-    <h1 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 md:mb-0">Примерка очков в дополненной реальности</h1>
-    <nav class="md:flex md:gap-8">
-      <a href="#offer" class="block py-1 md:py-0 text-gray-700">Предложение</a>
-      <a href="#advantages" class="block py-1 md:py-0 text-gray-700">Преимущества</a>
-      <a href="#example" class="block py-1 md:py-0 text-gray-700">Живой пример</a>
-    </nav>
-    <a href="#contact" class="inline-block mt-4 md:mt-0 md:ml-8 py-2 px-6 text-white bg-gray-800 rounded">Получить
-      консультацию</a>
+  <header class="bg-gray-900 text-white ">
+    <div class="width-100 p-6 md:flex md:items-center md:justify-between">
+      <h1 class="text-2xl md:text-3xl font-bold mb-4 md:mb-0">Виртуальная примерка</h1>
+      <nav class="md:flex md:gap-8 md:items-center">
+        <a href="#advantages"
+          class="block py-2 md:py-0 text-gray-300 hover:text-white transition duration-300">Преимущества</a>
+        <a href="#example"
+          class="block py-2 md:py-0 text-gray-300 hover:text-white transition duration-300">Пример&nbsp;сайта</a>
+      </nav>
+      <a href="#contact"
+        class="inline-block mt-4 md:mt-0 md:ml-8 py-2 px-6 text-white bg-blue-500 rounded transition duration-300 hover:bg-blue-700 text-center w-fit">Получить&nbsp;консультацию</a>
+    </div>
   </header>
 
   <main>
-    <section id="offer" class="md:flex md:justify-between md:items-center p-6 bg-blue-50">
-      <div class="mb-4 md:mb-0 md:w-1/2">
-        <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">💫 Примерка очков стала проще благодаря AR!
-        </h2>
-        <p class="text-gray-800">С нашим решением AR Quick Look, ваши клиенты могут виртуально примерять очки прямо с их
-          iPhone, не покидая уют своего дома. Улучшите взаимодействие с клиентами и увеличьте продажи уже сегодня!</p>
-      </div>
-      <div class="md:w-1/2">
-        <video class="w-full h-auto max-h-[80vh]" autoplay muted loop>
-          <source src="../videos/show-case.MP4" type="video/mp4">
-        </video>
+    <section id="offer" class="bg-blue-100">
+      <div class="width-100 md:flex md:justify-between md:items-center p-6">
+        <div class="mb-4 md:mb-0 md:w-1/2">
+          <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">💫 Примерка очков стала проще благодаря AR!
+          </h2>
+          <p class="text-gray-800">С нашим решением AR&nbsp;Quick&nbsp;Look, ваши клиенты могут виртуально примерять
+            очки прямо с
+            их
+            iPhone, не покидая уют своего дома. Улучшите взаимодействие с клиентами и увеличьте продажи уже сегодня!</p>
+        </div>
+        <div class="md:w-1/2">
+          <video class="w-full h-auto max-h-[80vh]" poster="../src/images/glasses/video-poster.png" autoplay muted loop>
+            <source src="../videos/show-case.mov" type="video/quicktime">
+            <source src="../videos/show-case.m4v" type="video/mp4">
+            <source src="../videos/show-case.webm" type="video/webm">
+          </video>
+        </div>
       </div>
     </section>
-
-    <section id="advantages" class="bg-white p-6">
-      <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">🎯 Почему выбирают AR Quick Look?</h2>
-      <div class="grid 
-      grid-cols-1 sm:grid-cols-2 md:grid-cols-3 
-      gap-4">
-        <article class="bg-blue-50 p-4 rounded shadow">
+    <section id="advantages" class="bg-white p-6 width-100">
+      <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">🎯 Почему выбирают AR&nbsp;Quick&nbsp;Look?</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <article class="bg-blue-200 p-4 rounded shadow transition duration-300 hover:bg-blue-300">
           <h3 class="font-bold mb-2">🌐 Онлайн примерка</h3>
           <p class="text-gray-800">Покупатели могут примерять очки без посещения магазина.</p>
         </article>
-        <article class="bg-blue-50 p-4 rounded shadow">
+        <article class="bg-blue-200 p-4 rounded shadow transition duration-300 hover:bg-blue-300">
           <h3 class="font-bold mb-2">🛡 Приватность</h3>
           <p class="text-gray-800">Изображение с камеры остается на iPhone и не передается на сайт.</p>
         </article>
-        <article class="bg-blue-50 p-4 rounded shadow">
-          <h3 class="font-bold mb-2">🌐 Онлайн примерка</h3>
+        <article class="bg-blue-200 p-4 rounded shadow transition duration-300 hover:bg-blue-300">
+          <h3 class="font-bold mb-2">🌐 Онлайн&nbsp;примерка</h3>
           <p class="text-gray-800">Покупатели могут примерять очки без посещения магазина.</p>
         </article>
-        <article class="bg-blue-50 p-4 rounded shadow">
-          <h3 class="font-bold mb-2">👌 Лёгкость использования</h3>
+        <article class="bg-blue-200 p-4 rounded shadow transition duration-300 hover:bg-blue-300">
+          <h3 class="font-bold mb-2">👌 Лёгкость&nbsp;использования</h3>
           <p class="text-gray-800">Не нужно скачивать плагины и устанавливать программы.</p>
         </article>
-        <article class="bg-blue-50 p-4 rounded shadow">
+        <article class="bg-blue-200 p-4 rounded shadow transition duration-300 hover:bg-blue-300">
           <h3 class="font-bold mb-2">📱 Эксклюзивность</h3>
           <p class="text-gray-800">Работает только на iPhone, обеспечивая целевую аудиторию состоятельных пользователей.
           </p>
         </article>
-        <article class="bg-blue-50 p-4 rounded shadow">
-          <h3 class="font-bold mb-2">🗣 Сарафанное радио</h3>
+        <article class="bg-blue-200 p-4 rounded shadow transition duration-300 hover:bg-blue-300">
+          <h3 class="font-bold mb-2">🗣 Сарафанное&nbsp;радио</h3>
           <p class="text-gray-800">Пользователи могут взаимодействовать и делиться впечатлениями с друзьями.</p>
         </article>
       </div>
     </section>
 
-    <section id="example" class="bg-white p-6">
+    <section id="example" class="bg-white p-6 width-100">
       <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">👓 Пример</h2>
-      <article class="md:flex md:items-start bg-blue-50 p-4 rounded shadow-lg">
-        <div class="md:w-1/2">
+      <article
+        class="md:flex md:items-start bg-blue-200 p-4 rounded shadow-lg transition duration-300 hover:bg-blue-300">
+        <div class="md:w-1/2 flex flex-col">
           <h3 class="font-bold mb-2">Солнечные очки Tom Ford 288 50F Lennon</h3>
           <img src="./images/glasses/tom-ford.png?width=400" srcset="
           ./images/glasses/tom-ford.png?width=400,
           ./images/glasses/tom-ford.png?width=800 2x
         " alt="Очки в AR" class="w-full h-auto mb-4" />
           <a href="./ar-objects/sun_glasses.usdz#custom=https://ar.js.garden/ar-banner.html" rel="ar"
-            id="glasses-ar-link" class="inline-flex items-center gap-x-4 py-2 px-6 text-white bg-gray-800 rounded mb-4">
+            id="glasses-ar-link"
+            class="inline-flex items-center gap-x-4 py-2 px-6 text-white bg-blue-500 rounded mb-4 transition duration-300 hover:bg-blue-700 w-fit">
             <picture>
-              <source srcset="
-                  ./images/ARKit-glyph.png?as=avif&width=400,
-                  ./images/ARKit-glyph.png?as=avif&width=800 2x
-                " type="image/avif" />
-              <source srcset="
-                  ./images/ARKit-glyph.png?as=webp&width=400,
-                  ./images/ARKit-glyph.png?as=webp&width=800 2x
-                " type="image/webp" />
-              <source srcset="
-                  ./images/ARKit-glyph.png?as=jpeg&width=400,
-                  ./images/ARKit-glyph.png?as=jpeg&width=800 2x
-                " type="image/jpeg" />
-              <img src="./images/ARKit-glyph.png?width=48" srcset="
-                  ./images/ARKit-glyph.png?width=48,
-                  ./images/ARKit-glyph.png?width=96 2x
-                " alt="AR logo" class="w-6" />
+              <source srcset="./images/ARKit-glyph.png?as=avif&width=400, ./images/ARKit-glyph.png?as=avif&width=800 2x"
+                type="image/avif" />
+              <source srcset="./images/ARKit-glyph.png?as=webp&width=400, ./images/ARKit-glyph.png?as=webp&width=800 2x"
+                type="image/webp" />
+              <source srcset="./images/ARKit-glyph.png?as=jpeg&width=400, ./images/ARKit-glyph.png?as=jpeg&width=800 2x"
+                type="image/jpeg" />
+              <img src="./images/ARKit-glyph.png?width=48"
+                srcset="./images/ARKit-glyph.png?width=48, ./images/ARKit-glyph.png?width=96 2x" alt="AR logo"
+                class="w-6" />
             </picture>
             <img src="./images/glasses/tom-ford.png?width=400" srcset="
             ./images/glasses/tom-ford.png?width=400,
             ./images/glasses/tom-ford.png?width=800 2x
           " alt="Очки в AR" class="sr-only" />
-            Примерить виртуально
+            Примерить&nbsp;виртуально
           </a>
+          <small class="text-gray-600">Для просмотра требуется iPhone</small>
         </div>
         <aside class="md:w-1/2 md:pl-8">
           <p class="font-bold mb-2">Цена: <strong> 23 800 руб.</strong></p>
           <p class="font-bold mb-2">Доступно: <strong> 5шт.</strong></p>
-          <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-2 hover:bg-blue-700">Добавить в
-            корзину</button>
-          <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-4 hover:bg-blue-700">Купить в 1
-            клик</button>
+          <button
+            class="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-2 hover:bg-blue-700 transition duration-300 w-fit">Добавить
+            в корзину</button>
+          <button
+            class="bg-blue-500 text-white font-bold py-2 px-4 rounded mb-4 hover:bg-blue-700 transition duration-300 w-fit">Купить
+            в 1 клик</button>
 
           <p class="font-bold mb-2">Характеристики товара:</p>
           <ul class="list-disc pl-5 mb-4">
@@ -129,26 +136,27 @@
       </article>
     </section>
 
-
-    <section id="contacts" class="bg-white p-6">
+    <section id="contact" class="bg-white p-6 width-100">
       <h2 class="text-2xl md:text-3xl font-semibold text-gray-900 mb-4">🎁 Ваш бизнес заслуживает лучшего!</h2>
-      <p class="text-gray-800 mb-6">Готовы внедрить AR Quick Look в свой бизнес? Нажмите на кнопку ниже, чтобы начать
-        трансформацию вашего бизнеса уже сегодня!</p>
-      <form action="#send" method="post" class="bg-blue-50 p-4 rounded shadow-lg space-y-4">
-        <label for="contact-info" class="block text-sm font-medium text-gray-700">Оставьте свои контакты и описание
-          вашего сайта с ссылками:</label>
-        <textarea name="contact-info" id="contact-info" cols="30" rows="10"
-          class="w-full h-32 p-2 rounded border-gray-300" required></textarea>
-        <button type="submit" class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Начать с AR
-          Quick Look 🚀</button>
+      <p class="text-gray-800 mb-6">Готовы внедрить AR&nbsp;Quick&nbsp;Look в свой бизнес? Оставьте свои контактные
+        данные и
+        описание вашего сайта с ссылками, чтобы мы могли связаться с вами и начать трансформацию вашего бизнеса уже
+        сегодня!</p>
+      <form action="#send" method="post" data-netlify="true" name="ar-glasses"
+        class="bg-blue-200 p-4 rounded shadow-lg space-y-4 transition duration-300 hover:bg-blue-300">
+        <input type="hidden" name="form-name" value="ar-glasses">
+        <label for="contact-message" class="block text-sm font-medium text-gray-700 sr-only">Описание вашего сайта с
+          ссылками</label>
+        <textarea name="contact-message" id="contact-message" cols="30" rows="5"
+          placeholder="Опишите ваш сайт и предоставьте ссылки" class="w-full p-2 rounded border-gray-300"
+          required></textarea>
+        <button type="submit"
+          class="bg-blue-500 text-white font-bold py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Отправить
+          🚀</button>
       </form>
     </section>
 
   </main>
 </body>
-
-
-
-
 
 </html>
